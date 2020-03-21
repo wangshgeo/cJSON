@@ -14,8 +14,9 @@ UTILS_SOVERSION = 1
 
 CJSON_SO_LDFLAG=-Wl,-soname=$(CJSON_LIBNAME).so.$(CJSON_SOVERSION)
 UTILS_SO_LDFLAG=-Wl,-soname=$(UTILS_LIBNAME).so.$(UTILS_SOVERSION)
-
-PREFIX ?= /usr/local
+#for conda install 
+#PREFIX ?= /usr/local
+PREFIX ?= /opt/conda
 INCLUDE_PATH ?= include/cjson
 LIBRARY_PATH ?= lib
 
